@@ -50,9 +50,7 @@ def aggregate(row):
 	for z in range(len(row)):
 		if (row[z] == 0 and count != 0): 
 			aggregated.append(count)
-			#!
 			aggregated.append(0)
-			#!
 			count = 0
 		else: count += row[z]
 	if count != 0: aggregated.append(count)
